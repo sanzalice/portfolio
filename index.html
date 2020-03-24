@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html>
+  <title>Alice Sanz — Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="w3-style.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Raleway"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"
+  ></script>
+
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Avenir", sans-serif;
+    }
+    ​ body,
+    html {
+      height: 100%;
+      line-height: 1.8;
+    }
+    ​
+/* Full height image header */
+.bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url
+        (
+          "https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2Ff3620784548003.5d601790b6377.jpg"
+        );
+      min-height: 100%;
+    }
+    ​ .w3-bar .w3-button {
+      padding: 16px;
+    }
+    .w3-center .w3-row-padding{
+      text-align: justify;
+    }
+    .video {
+      position: absolute;
+      z-index: -1;
+      opacity: 0.78;
+      widows: 100%;
+      width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+  </style>
+  <body>
+    ​
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="#home" class="w3-bar-item w3-button w3-wide">SANZ</a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+          <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+          <a href="#work" class="w3-bar-item w3-button">WORK</a>
+          <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+        ​
+        <a
+          href="javascript:void(0)"
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+          onclick="w3_open()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+    ​
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+      style="display:none"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-large w3-padding-16"
+        >Close ×</a
+      >
+      <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"
+        >ABOUT</a
+      >
+      <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button"
+        >WORK</a
+      >
+      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button"
+        >CONTACT</a
+      >
+    </nav>
+    
+    
+
+    <!-- Header with full-height image -->
+    <header class=" w3-display-container w3-grayscale-min" id="home">
+
+        <img
+          src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2F64663851_1279242082230668_6144158631999832064_n.jpg?v=1580686385952"
+          class="w3-image w3-greyscale"
+          style="width:100%"
+        /><div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Approcher l'interdisciplinarité<br/> entre corps et technologies</span><br>
+ <span class="w3-large"></span>
+  </div>
+    </header>
+
+    <!-- Work Section -->
+    <div class="w3-container" style="padding:128px 16px" id="work">
+      <h3 class="w3-center">WORK</h3>
+      <p class="w3-center w3-large">
+        Installations, recherches, expérimentations
+      </p>
+      <p class="w3-center w3-large">
+        ——————————
+      </p>
+
+      
+<!-- INPUT LAB -->
+      
+      <div class="w3-row-padding" style="margin-top:50px">
+ <p class="w3-center w3-large">
+        <b>YOGEEK</b>, Ateliers d'exploration gestuelle — Collectif Input-Lab
+      </p>
+       <div class="w3-col l3 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2Fcollectif_input-lab_010.png?v=1580580226891"
+            style="width:100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="Passager.01"
+          />
+        </div>
+        
+<div class="w3-col l3 m6 w3-xxlarge">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2Fcollectif_input-lab_009.png?v=1580582300093"
+            style="width:100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+               alt=" <p> Passager.01 </p> Cette expérience consiste à revêtir une membrane sono-réactive conçue dans une matière extrêmement flexible. 
+                En jouant sur la tension du tissu, vous déclenchez différents points sonores répartis sur la surface du textile. 
+                Selon votre gestuelle, un écho se déploie dans l’espace invitant au mouvement suivant, 
+                à la découverte de votre espace sonore."
+          />
+        </div>
+        <div class="w3-col l3 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2F_I0B5242.png?v=1580580211004"
+            style="width:100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+               alt="<p> Passager.02 </p> En mobilisant partiellement la partie dorsale, le poids de ce module vous déséquilibre et vous pousse 
+                  à vous redresser. Vos mouvements déplacent des micros piézoélectriques incrustés au cœur des excroissances. 
+                  La résonance produite vous incite davantage à ressentir qu’à voir. "
+          />
+        </div>
+       
+        <div class="w3-col l3 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2Fcollectif_input-lab_007.png?v=1580580212146"
+            style="width:100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+               alt="<p> Passager.03 </p> Dans une une posture d’éveil, ce module vous invite à effleurer des pans vaporeux. 
+                    En vous égarant sous sa surface, il vous incite à étirer vos membres, à atteindre des zones “hors corps”. 
+                    Au contact du voile, vous plongez dans un espace sonore composé de basses fréquences."
+          />
+        </div>    
+
+        <div class="w3-col l3 m6 w3-row-padding">
+          <video style="width:100%" autoplay muted controls loop>
+            <source
+              src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2Fprez_proto_01.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        
+        <div class="w3-col l3 m6">
+          <video style="width:100%" autoplay muted controls loop>
+            <source
+              src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2Fprez_proto-02.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+     
+<div class="w3-col l3 m6">
+          <video style="width:100%" autoplay muted controls loop>
+            <source
+              src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2Fprez-proto-03.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+ 
+      <div class="w3-row-padding" style="margin-left:50px" >
+        <p>
+          <b>yogeek </b>est un atelier gestuel ouvert à tous. Il vise à se « remettre dans son corps », à entrer dans son geste, 
+          grâce à la technologie. <br/> Par un déclic, une prise de conscience, une découverte ou simplement un moment 
+          de détente, nous souhaitons à travers yogeek, <br/>amener les utilisateurs à adopter une posture d’interaction active 
+          et créative en se laissant guider par l’impulsion du corps.
+        </p>
+        <p>
+          Nos prototypes ont étés pensés pour explorer différentes postures durant l’atelier yogeek. 
+          Il y a des surface, à effleurer, écouter, <br/> à porter entièrement ou partiellement. Qu’elles nous enveloppement 
+          ou nous bousculent, elles nous incitent à bouger autrement <br/>tout en proposant une expérience sensible 
+          entre textile et numérique.
+        </p>
+      </div>
+
+        <div class="w3-row-padding w3-center">
+          <video style="width:100%" autoplay muted controls loop>
+            <source
+              src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2FTeaser-YOGEEK.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+   
+      <div class="w3-row-padding w3-section">
+        <div class="w3-col l3 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2F6862ef84548003.5d601037e2db6.jpg?v=1580428996248"
+            style="width:100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="Expérimentations"
+          />
+        </div>
+        <div class="w3-col l3 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2Fcollectif_input-lab_001.jpg?v=1580580213000"
+            style="width:100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="Échantillons textiles"
+          />
+        </div>
+        <div class="w3-col l3 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2Fcollectif_input-lab_012.jpg?v=1580580228068"
+            style="width:100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="Circuit électrique brodé"
+          />
+        </div>
+        <div class="w3-col l3 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2Fcollectif_input-lab_003%20copy.jpg?v=1580584252798"
+            style="width:100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="Passager.03"
+          />
+        </div>
+        </div>
+        
+       <p class="w3-center w3-large w3-opacity">
+        <small>Direction Artistique, Direction Technique et Design sonore <br/>un projet réalisé en collaboration avec Alice Herbreteau et Charlène Brun co-fondatrices du collectif <a href="https://www.instagram.com/input_lab/" target="_blank"> @input_lab </a></small>
+        
+        <small>juin 2019</small>
+        </p>
+        
+        <p class="w3-center w3-large w3-opacity" style="margin-top:10px">
+        ——————————
+      </p>
+
+      </div>
+    </div>
+      
+      
+      <!--- Le geste expressif -->
+      
+      <div class="w3-row-padding" style="margin-top:50px">
+ <p class="w3-center w3-large">
+        <b>Le geste expressif</b>, <br/> Étude de l’influence des outils technologiques sur les pratiques et les représentations de la danse — Mémoire de recherche
+      </p>
+         
+         <div class="w3-row-padding w3-center">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2Ferreur-systeme-rouge_70.2.png?v=1580585352486"
+            style="width:100%"
+          />
+        </div>
+
+<div class="w3-row-padding " style="margin-left:50px" >
+        <p>
+          Le chorégraphe Maurice Béjart définit la danse comme une tension rythmique qui amène à se prolonger, 
+          sortir de son enveloppe corporelle pour inventer <br/> d’autres temps, d’autres espaces, d’autres mondes. 
+          Comme une action expressive vers l’extérieur, nous dansons pour créer un « état de soi augmenté ». <br/>
+          Dès lors, l’outil technologique apparaît comme un partenaire évident à l’expression et l’expansion du corps. <br/> </p>
+  <p>
+          À travers cette recherche, j'ai fais des arts vivants mon terrain d’enquête afin d’étudier l’influence 
+          des outils technologiques sur les pratiques <br/> et les représentations de la danse. 
+          Impactant tant bien la composition chorégraphique que la scénographie, la popularisation des performances <br/> multimédias  se déploie à mesure que les systèmes informatiques se mêlent à nos vies quotidiennes. 
+          Comme pour la musique, la technologie <br/> a fait évoluer les outils de composition, d’enregistrement 
+          de la danse. L’utilisation d’outils technologiques comme moyen de sauvegarde, <br/> mais aussi comme appui créatif, nous aident à analyser l’impact de la technologie sur la sensibilité et l’expressivité des corps en mouvement.
+         
+      
+
+        </p>
+      </div>
+        
+         <div class="w3-row-padding w3-section">
+        <div class="w3-col l3 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2FSIMP-D13-C319040413210.png"
+            style="width:100%"
+          />
+        </div>
+        
+            <div class="w3-col l3 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2FSIMP-D13-C319040813071.png"
+            style="width:100%"
+          />
+        </div>
+
+        <div class="w3-col l3 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2FSIMP-D13-C319040413241.png?v=1580589119909"
+            style="width:100%"
+          />
+        </div>
+           
+           <div class="w3-col l3 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2FSIMP-D13-C319040413240.png?v=1580589090448"
+            style="width:100%"
+          />
+        </div>
+           
+        <div class="w3-row-padding w3-section">
+        <div class="w3-col l3 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2FSIMP-D13-C319040813030.png?v=1580589094324"
+            style="width:100%"
+          />
+        </div>
+
+         <div class="w3-col l3 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2FSIMP-D13-C319040413230.png?v=1580589101212"
+            style="width:100%"
+          />
+        </div>
+        <div class="w3-col l3 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2FSIMP-D13-C319040813040.png?v=1580589109657"
+            style="width:100%"
+          />
+        </div>
+        
+        <div class="w3-col l3 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2FSIMP-D13-C319040413220.png?v=1580589096813"
+            style="width:100%"
+          />
+        </div>
+           </div>
+          
+          <div class="w3-row-padding w3-center">
+        <p>
+
+        </p>
+      </div>
+ 
+       <div class=" w3-center" style="margin-top:60px">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2Ferreur-systeme-rouge_132.png?v=1580590372735"
+            style="width:100%"
+          />
+        
+
+          
+        <p class="w3-center w3-large w3-opacity">
+        <small> Projet de recherche <br/>
+          Conception et édition réalisée en collaboration avec Alice Herbreteau et Charlène Brun co-fondatrices du collectif <a href="https://www.instagram.com/input_lab/" target="_blank"> @input_lab </a></small>
+        </p>
+        <p class="w3-center w3-large w3-opacity">
+        <small>juin 2019</small>
+        </p>
+        
+        <p class="w3-center w3-large w3-opacity" style="margin-top:10px">
+        ——————————
+         </p>
+          </div>
+           
+         
+          </div>
+         
+        </div>
+      
+
+      <!--- Duel Sonore -->
+      <div class="w3-row-padding" style="margin-top:50px">
+ <p class="w3-center w3-large">
+        <b>Duel sonore</b>, Prototype d'une joute interactive
+      </p>
+        
+        <div class="w3-row-padding w3-center">
+          <video style="width:100%" autoplay muted controls loop>
+            <source
+              src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2FDUEL.mp4?v=1580592232285"
+              type="video/mp4"
+            />
+          </video>
+        </div> 
+        
+        <div class="w3-row-padding" style="margin-left:50px" >
+        <p>
+        Élaboration des armures et épées connectées à un système sonore diffusant différentes combinaisons de fréquences à chaque contact entre deux adversaires. 
+<br/>Prototypes réalisés en une semaine lors d'un workshop à thématique sonore et sportive organisé par le collectif de musique expérimentale BRUTPOP.
+        </p>
+        </div>
+        
+        <div class="w3-col l4 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2F03.jpg?v=1580595557002"
+            style="width:100%"
+          />
+        </div>
+        
+          <div class="w3-col l4 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2F01.jpg?v=1580594429774"
+            style="width:100%"
+          />
+        </div>
+        
+          <div class="w3-col l4 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2F02.jpg?v=1580594430143"
+            style="width:100%"
+          />
+        </div>
+
+         <p class="w3-center w3-large w3-opacity">
+        <small>Conception et réalisation en collaboration avec Sylvie Nguyen</small>
+        </p>
+         <p class="w3-center w3-large w3-opacity">
+        <small>juin 2019</small>
+   <br/> 
+        ——————————
+         
+         </p>
+        
+      </div>
+      
+    <!-- Cinéphonie -->  
+      
+       <div class="w3-row-padding" style="margin-top:50px">
+ <p class="w3-center w3-large">
+        <b>Cinéphonie</b>, Mise en scène des fonds d'archives des cinémas Gaumont Pathé
+      </p>
+    <div class="w3-row-padding" style="margin-left:50px" >
+         <b>Cinéphonie </b>est un projet de valorisation permettant d’explorer l’univers de Gaumont 
+          à travers le sens du toucher afin de faire revivre <br/> les paysages sonores des films.
+          Chaque objet disposé dans l’espace renferme un extrait sonore qui retentit lorsque 
+          le public interagi avec lui. <br/> Une écoute active permettra au visiteur d’apprécier de façon inhabituelle les oeuvres du 7ème art par le son et le mouvement.
+      
+         
+        <p>
+
+        </p>
+      </div>
+         
+          <div class="w3-col l6 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2FP1040586%20copy.jpg?v=1580596869189"
+            style="width:100%"
+          />
+        </div>
+        <div class="w3-col l6 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2FP1040569%20copy.jpg"
+            style="width:100%"
+          />
+        </div>
+         
+         <div class="w3-col l6 m6">
+          <video style="width:100%" autoplay muted controls loop>
+            <source
+              src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2FCinephonie.mp4?v=1580598800033"
+              type="video/mp4"
+            />
+          </video>
+        </div> 
+         
+         <div class="w3-col l6 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2Fbottle.jpg?v=1580599252252"
+            style="width:100%"
+          />
+        </div>
+         <div class="w3-row-padding">
+           
+         </div>
+          <p class="w3-center w3-large w3-opacity">
+        <small>Design sonore et scénographie, conception et réalisation en collaboration avec Solène Lombard</small>
+        </p>
+         <p class="w3-center w3-large w3-opacity">
+        <small>juin 2019</small>
+   <br/> 
+        ——————————
+         
+         </p>
+    </div>
+      
+           
+     <!-- Djabara -->
+    
+<div class="w3-row-padding" style="margin-top:50px">
+ <p class="w3-center w3-large">
+        <b>Djabara</b>, La virtualité du rythme <br/>
+conception masque de réalité virtuelle, univers 3D, expérience VR et livre numérique
+      </p>
+
+<div class="w3-col l6 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2Fb795a777722441.5c90261f7aed6.jpg"
+            style="width:100%"
+          />
+        </div>
+  
+  
+          <div class="w3-col l3 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2F16aadf77722441.5c90261eb9a95.jpg?v=1580679855186"
+            style="width:100%"
+          />
+        </div>
+  
+        <div class="w3-col l3 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2F951b2177722441.5c90261eba24b.jpg?v=1580679855312"
+            style="width:100%"
+          />
+        </div>
+  
+         <div class="w3-col l3 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2F91918a77722441.5c90261eb9e5b.jpg?v=1580679856397"
+            style="width:100%"
+          />
+        </div>
+  
+        <div class="w3-col l3 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2Fc8016e77722441.5c90261eb96cc.jpg?v=1580679852579"
+            style="width:100%"
+          />
+        </div>
+      
+      <div class="w3-col l6 m6">
+        <p class=" w3" style="margin-top:10px">
+        Inspiré d’un instrument à percussion d’Afrique de l’Ouest, le shékéré, 
+ce masque nous immerge dans un univers sensoriel où le son et la matière s’accordent sur le rythme du corps. 
+J’ai voulu travailler sur la musicalité du corps en mouvement. <br/>À chaque geste, même minime, près de deux milles perles de bois, de métal, de béton s’entrechoquent dans un son qui effleure nos oreilles, les perles nous glissent sur la peau. 
+
+         <br/> Entre immersion et destablilisation, le masque appelle le mouvement.</p>
+    </div>
+
+<div class="w3-row-padding" style="margin-left:50px" >
+ <p>
+  Parallelement à ce projet, j’ai conçus à partir du «Livre infini», un dispositif d’Albertine Meunier, un objet-livre présentant l’univers du masques. <br/> Le livre interactif ne dévoile son contenu qu’une fois la page tournée.
+Le livre de Djabara renferme un personnage sonore dansant au rythme de son propre corps. <br/>Comme un battement de coeur, le son l’accompagne à chaque geste, chaque mouvement. Son histoire est gravée dans quatre plaques de bois où la lumière joue <br/> avec les formes et les contreformes. Djabara apparaît et disparaît entre les pages, insaisissable.
+Entre le tangible du matériau et la virtualité de la lumière, <br/>la projection met en tension la relation complexe entre le corps et le son.
+  </p>
+  </div>
+
+  <div class="w3-col l6 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2FP1040010.jpg?v=1580681929495"
+            style="width:100%"
+          />
+        </div>
+  
+  <div class="w3-col l6 m6">
+          <video style="width:100%" autoplay muted controls loop>
+            <source
+              src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2Fsanz.mp4?v=1580681830310"
+              type="video/mp4"
+            />
+          </video>
+        </div> 
+   
+   <div class="w3-row-padding" style="margin-left:50px" >
+        <p style="margin-top:10px">
+        À travers le masque DJABARA, je propose une réinterpretation du spectacle
+de la programmation MARTO!, Robot, l’amour éternel, de la danseuse
+Kaori Ito <br/> dans un univers virtuel organique et oppressant.
+En représentant le corps comme une enveloppe vide, il nous devient étranger, 
+agressif et incontrolable.</p>
+  </div>
+  
+    <div class="w3-row-padding w3-center" style="margin-top:10px">
+          <video style="width:100%" autoplay muted controls loop>
+            <source
+              src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2Fscreencap_videoj.mp4?v=1580681749101"
+              type="video/mp4"
+            />
+          </video>
+        </div> 
+  
+  <div class="w3-col l3 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2F89f05677722441.5c9027594a882.png?v=1580679857526"
+            style="width:100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+          />
+        </div>
+
+<div class="w3-col l3 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2F9754fa77722441.5c9027594b1bb.png?v=1580679856954"
+            style="width:100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+          />
+        </div>
+  
+  <div class="w3-col l3 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2Fc4ab2277722441.5c9027594ad4a.png?v=1580679853114"
+            style="width:100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+          />
+        </div>
+
+<div class="w3-col l3 m6">
+          <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2Fc4ce1277722441.5c9027594a3af.png?v=1580679855961"
+            style="width:100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+          />
+        </div>
+
+ </div>
+          <p class="w3-center w3-large w3-opacity">
+        <small>Présenté du 8 février au 10 mars dans les différents théâtres du Festival MARTO! <br/>
+et le 16 mars lors du Hacking de l’Hotel de Ville de Paris 
+ainsi que du 16 au 27 mai 2018 au festival Ateliers Partagés à la Gaité Lyrique à Paris <br/> Conception, réalisation, programmation et modélisation</small>
+        </p>
+         <p class="w3-center w3-large w3-opacity">
+        <small>mai 2018</small>
+   <br/> 
+        ——————————
+         
+         </p>
+    </div>
+  
+    </div>
+    
+      
+    <!-- Modal for full size images on click-->
+    <div
+      id="modal01"
+      class="w3-modal w3-black"
+      onclick="this.style.display='none'"
+    >
+      <span
+        class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright"
+        title="Close Modal Image"
+        >×</span
+      >
+      <div
+        class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
+      >
+        <img id="img01" class="w3-image" />
+        <p id="caption" class="w3-opacity w3-large"></p>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="w3-container" style="padding:128px 16px" id="about">
+      <h3 class="w3-center">Alice Sanz</h3>
+      <p class="w3-center w3-large">Direction Technique et Artistique</p>
+      <div class="w3-center">
+        <p>
+          Étudiante en maîtrise de recherche à l'Université du Québec à Montréal,<br/> j'étudie les interactions entre les corps en mouvements et les machines à travers le milieu de la danse. <br/> 
+          À la recherche de nouvelles interfaces tournées vers le sensible, j'explore la place des outils technologiques sur scène <br/> et questionne le rapport de force perceptible entre danseurs et dispositifs.
+        </p>
+      </div>
+      <div class= "w3-row-padding w3-center w3-small">  
+        <img
+            src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2FAlice-SANZ_CV_2020.jpg?v=1580602065363"
+            style="width:30%"
+            onclick="onClick(this)"
+            alt="CV"
+          />
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div
+      class="w3-container w3-light-grey"
+      style="padding:16px 16px"
+      id="contact"
+    >
+      <h3 class="w3-center">CONTACT</h3>
+      <p class="w3-center w3-large">Collaborations, missions ou projets ? :</p>
+      <div style="margin-top:38px">
+        <p class="w3-xlarge w3-center "> sanz.alice@gmail.com</p>
+        <p class="w3-xlarge w3-center"> Montréal, QC</p>
+
+        <div class="w3-large w3-center" style="margin-top:38px">
+          <p>
+          <a href="https://www.instagram.com/sanz.alice/" target="_blank">
+            <i class="fa fa-instagram w3-hover-opacity" style="margin-right:10px"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/alice-sanz-459475190/" target="_blank">
+            <i class="fa fa-linkedin w3-hover-opacity" style="margin-right:10px"></i>
+          </a>      
+          <a href="https://www.behance.net/sanzalice1262" target="_blank">
+            <i class="fa fa-behance w3-hover-opacity" style="margin-right:10px"></i>
+          </a>
+          </p>  
+        </div>
+
+        <!-- Image of location/map -->
+        <img
+          src="https://cdn.glitch.com/61319efb-c39b-4524-9c16-7b2391594fa7%2Fok.jpg?v=1580687037792"
+          class="w3-image w3-greyscale w3-opacity"
+          style="width:100%;"
+        />
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-padding-40 w3-greyscale">
+      <a href="#home" class="w3-button "><i class="fa fa-arrow-up "></i></a>
+    </footer>
+
+    <script>
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+
+      var videos = document.getElementsByTagName("video");
+
+      for (var i = 0; i < videos.length; i++) {
+        $(videos[i]).on({
+          mouseenter: function() {
+            videos[i].setAttribute("controls", "controls");
+          },
+          mouseleave: function() {
+            videos[i].removeAttribute("controls");
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
